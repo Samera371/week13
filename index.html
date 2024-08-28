@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and links to external resources -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Famous Cricketers</title>
+  <!-- Link to Bootstrap CSS for styling -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to custom CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Main container for the content -->
   <div class="container">
+    <!-- Main heading for the page -->
     <h1 class="my-4">Famous Cricketers</h1>
+    <!-- Form for adding new cricketers -->
     <form id="cricketer-form">
+      <!-- Search bar for filtering cricketers -->
       <div class="form-group">
         <input type="text" id="search-bar" class="form-control" placeholder="Search cricketers...">
       </div>
+      <!-- Input field for cricketer's name -->
       <div class="form-group">
         <input type="text" id="name" class="form-control" placeholder="Name" required>
       </div>
+      <!-- Input field for cricketer's country -->
       <div class="form-group">
         <input type="text" id="country" class="form-control" placeholder="Country" required>
       </div>
+      <!-- Input field for cricketer's date of birth -->
       <div class="form-group">
         <input type="date" id="dob" class="form-control" placeholder="Date of Birth" required>
       </div>
+      <!-- Input field for cricketer's age -->
       <div class="form-group">
         <input type="number" id="age" class="form-control" placeholder="Age" required>
       </div>
+      <!-- Input field for cricketer's active period -->
       <div class="form-group">
         <input type="text" id="activePeriod" class="form-control" placeholder="Active Period" required>
       </div>
+      <!-- Input field for cricketer's image URL -->
       <div class="form-group">
         <input type="url" id="image" class="form-control" placeholder="Image URL" required>
       </div>
+      <!-- Button to submit the form and add a new cricketer -->
       <button type="submit" class="btn btn-primary">Add Cricketer</button>
     </form>
+    <!-- Container to display the list of cricketers -->
     <div id="cricketers-list" class="mt-4"></div>
   </div>
+  <!-- Link to the main JavaScript file -->
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cricketer-card {
+    border: 1px solid #151242;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(207, 221, 221);
+    
+  }
+  
+  .cricketer-card img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  .cricketer-card h5 {
+    margin: 10px 0 5px;
+  }
+  
+  .cricketer-card p {
+    margin: 5px 0;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  

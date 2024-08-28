@@ -1,11 +1,13 @@
 import { Cricketer, deleteCricketer, fetchCricketers } from './dataService';
 
+// Function to display cricketers on the webpage
 export function displayCricketers(cricketers: Cricketer[]): void {
   const cricketersList = document.getElementById('cricketers-list') as HTMLDivElement;
-  cricketersList.innerHTML = '';
+  cricketersList.innerHTML = ''; // Clear the existing list
 
   const countries: { [key: string]: Cricketer[] } = {};
 
+  // Group cricketers by their country
   cricketers.forEach(cricketer => {
     if (!countries[cricketer.country]) {
       countries[cricketer.country] = [];
@@ -13,6 +15,7 @@ export function displayCricketers(cricketers: Cricketer[]): void {
     countries[cricketer.country].push(cricketer);
   });
 
+  // Create and append HTML elements for each country and their cricketers
   for (const country in countries) {
     const countrySection = document.createElement('div');
     countrySection.innerHTML = `<h2>${country}</h2>`;

@@ -1,45 +1,51 @@
+/* Set the font family and background color for the entire body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: aqua;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .cricketer-card {
-    border: 1px solid #151242;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: rgb(207, 221, 221);
-    
-  }
-  
-  .cricketer-card img {
-    max-width: 100px;
-    border-radius: 50%;
-  }
-  
-  .cricketer-card h5 {
-    margin: 10px 0 5px;
-  }
-  
-  .cricketer-card p {
-    margin: 5px 0;
-  }
-  
-  .btn-danger {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .btn-danger:hover {
-    background-color: #c82333;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+}
+
+/* Style the container with a maximum width, center alignment, and padding */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the cricketer card with border, padding, margin, border-radius, and background color */
+.cricketer-card {
+  border: 1px solid #151242;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(207, 221, 221);
+}
+
+/* Style for the image inside the cricketer card with max width and border-radius */
+.cricketer-card img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Style for the heading inside the cricketer card with margin */
+.cricketer-card h5 {
+  margin: 10px 0 5px;
+}
+
+/* Style for the paragraph inside the cricketer card with margin */
+.cricketer-card p {
+  margin: 5px 0;
+}
+
+/* Style for the danger button with background color, text color, border, padding, and cursor */
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Style for the danger button on hover with a different background color */
+.btn-danger:hover {
+  background-color: #c82333;
+}
